@@ -22,7 +22,7 @@
     <span id="suitortitle">MOUTHSOUNDS</span>
     <span id="promptworkslove">We were in a dark place when we made this.</span>
     <div class="btn-container">
-      <a href="https://chrome.google.com/webstore/detail/mouthsounds/mffikfabjgdafkejajgkbheipanihnfh?utm_source=gmail" class="btn center">Troll Mode Activate</a>
+      <a id="downloadlink" href="https://chrome.google.com/webstore/detail/mouthsounds/mffikfabjgdafkejajgkbheipanihnfh?utm_source=gmail" class="btn center">Troll Mode Activate</a>
     </div>
 
     
@@ -32,6 +32,9 @@
     <script>
       jQuery(document).ready(function() {
         $('#backgroundvideo').hide(0).fadeIn(1500);
+        if(navigator.userAgent.indexOf('Firefox')!=-1) {
+          $('#downloadlink').attr('href','https://addons.mozilla.org/en-US/firefox/addon/fire_mouth/')
+        }
       });
     </script>
     <script type='text/javascript'>
